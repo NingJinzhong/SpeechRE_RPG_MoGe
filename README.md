@@ -3,6 +3,40 @@
 ## Overview
 This repository contains the implementation of RPG-MoGe, a novel approach for speech relation extraction. The following guide provides step-by-step instructions for setting up and running the system.
 
+
+## Datasets
+
+This repository contains and references several datasets for Speech Relation Extraction (SpeechRE).
+
+### 1. TTS-based SpeechRE Datasets (provided in this repo)
+
+Under the [`Datasets/`](./Datasets) folder, we provide the **text parts** of two TTS-synthesized SpeechRE datasets:
+
+* `speech_conll04`: TTS version of the widely used CoNLL04 dataset.
+* `speech_ReTracred`: TTS version of the Retacred dataset.
+
+These datasets contain the **textual annotations** aligned with synthetic speech (not included here).
+
+---
+
+### 2. CommonVoice-SpeechRE (proposed in this work)
+
+To advance SpeechRE with **real human speech**, we propose the **CommonVoice-SpeechRE** dataset, derived from [Common Voice 17.0](https://huggingface.co/datasets/mozilla-foundation/common_voice_17_0).
+
+We release it in two parts on Hugging Face:
+
+* **[CommonVoice-SpeechRE-audio](https://huggingface.co/datasets/your_username/CommonVoice-SpeechRE-audio)**
+
+  * Contains **19,583 real speech samples**, downsampled to 16kHz.
+  * Audio files are named with unique speech IDs.
+
+* **[CommonVoice-SpeechRE-text](https://huggingface.co/datasets/kobe8-24/CommonVoice-SpeechRE-text)**
+
+  * Provides transcripts, entity annotations, and relation triplets aligned with audio IDs.
+  * Entity and relation annotations are **manually labeled** by our team.
+
+When using these datasets, please cite both **Common Voice** and our **CommonVoice-SpeechRE** work.
+
 ## Installation and Setup
 
 ### 1. Environment Configuration
@@ -53,5 +87,3 @@ python test_retacred.py
 python test_cv17.py
 ```
 
-## Dataset Information
-During the current submission and review phase, our annotated CommonVoice-SpeechRE dataset is limited to 500 sample instances. This subset is provided for preliminary evaluation and demonstration purposes.
