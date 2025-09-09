@@ -1,0 +1,18 @@
+{
+    "datasets": "speech_conll04",
+    "entities_type_num": 4,
+    "entities_type": [
+        "<Loc>",
+        "<Org>",
+        "<Other>",
+        "<Peop>"
+    ],
+    "relations_type_num": 5,
+    "relations_type": [
+        "OrgBased_In",
+        "Work_For",
+        "Located_In",
+        "Live_In",
+        "Kill"
+    ]
+}

@@ -1,0 +1,4 @@
+from huggingface_hub import snapshot_download
+snapshot_download(repo_id="openai/whisper-base.en",local_dir = "PretrainedSpeechModel/whisper-base.en",ignore_patterns=["tf_model.h5","flax_model.msgpack","model.safetensors"],resume_download=True)
+snapshot_download(repo_id="openai/whisper-small.en",local_dir = "PretrainedSpeechModel/whisper-small.en",ignore_patterns=["tf_model.h5","flax_model.msgpack","model.safetensors"],resume_download=True)
+snapshot_download(repo_id="openai/whisper-medium.en",local_dir = "PretrainedSpeechModel/whisper-medium.en",ignore_patterns=["tf_model.h5","flax_model.msgpack","model.safetensors"],resume_download=True)
