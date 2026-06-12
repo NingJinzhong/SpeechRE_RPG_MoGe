@@ -25,12 +25,12 @@ To advance SpeechRE with **real human speech**, we propose the **CommonVoice-Spe
 
 We release it in two parts on Hugging Face:
 
-* **[CommonVoice-SpeechRE-audio](https://huggingface.co/datasets/kobe8-24/CommonVoice-SpeechRE-audio)**
+* **[CommonVoice-SpeechRE-audio](https://huggingface.co/datasets/DMU-ITREC/CommonVoice-SpeechRE-audio)**
 
   * Contains **19,583 real speech samples**, downsampled to 16kHz.
   * Audio files are named with unique speech IDs.
 
-* **[CommonVoice-SpeechRE-text](https://huggingface.co/datasets/kobe8-24/CommonVoice-SpeechRE-text)**
+* **[CommonVoice-SpeechRE-text](https://huggingface.co/datasets/DMU-ITREC/CommonVoice-SpeechRE-text)**
 
   * Provides transcripts, entity annotations, and relation triplets aligned with audio IDs.
   * Entity and relation annotations are **manually labeled** by our team.
